@@ -10,7 +10,7 @@ st.set_page_config(page_title="Starbucks Location Analysis", layout="wide")
 @st.cache_data
 def load_data():
     # In real application, you would load from CSV
-    df = pd.read_csv("https://github.com/143Himanshujangid/starbuks/blob/main/akshit/Starbucks%20Store%20Locations.csv", encoding='latin1')
+    df = pd.read_csv("https://raw.githubusercontent.com/143Himanshujangid/starbuks/main/akshit/Starbucks%20Store%20Locations.csv", encoding='latin1')
     return df
 
 def main():
