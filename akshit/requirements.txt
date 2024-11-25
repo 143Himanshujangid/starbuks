@@ -1,0 +1,6 @@
+Streamlit
+Panda
+Numpy
+Matplotlib
+plotly
+streamlit>=1.32.0
