@@ -205,3 +205,7 @@ def show_location_analysis(df):
         names=country_counts.index,
         title="Store Distribution by Country"
     )
+    st.plotly_chart(fig)
+
+if __name__ == "__main__":
+    main()
