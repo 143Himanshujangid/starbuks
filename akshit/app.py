@@ -10,7 +10,7 @@ st.set_page_config(page_title="Starbucks Location Analysis", layout="wide")
 @st.cache_data
 def load_data():
     # In real application, you would load from CSV
-    df = pd.read_csv("Starbucks Store Locations.csv", encoding='latin1')
+    df = pd.read_csv("https://github.com/143Himanshujangid/starbuks/blob/main/akshit/Starbucks%20Store%20Locations.csv", encoding='latin1')
     return df
 
 def main():
@@ -205,7 +205,3 @@ def show_location_analysis(df):
         names=country_counts.index,
         title="Store Distribution by Country"
     )
-    st.plotly_chart(fig)
-
-if __name__ == "__main__":
-    main()
